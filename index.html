@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	
+	<h1>Formularios</h1>
+	<form action="">
+		<fieldset>
+			<legend>Datos personales</legend>
+			
+			<p>
+				<label for="apellido">Apellido</label>
+				<input type="text" id="apellido">
+			</p>
+
+			<p>
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre">
+			</p>
+
+			<p>
+				<label for="telefono">Teléfono:</label>
+				<input type="tel" id="telefono" size="10">
+			</p>
+
+			<p>
+				<label for="contraseña">Contraseña:</label>
+				<input type="password" id="contraseña">
+			</p>
+
+			<p>
+				<label for="email">Email:</label>
+				<input type="email" id="email">
+			</p>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Personaliza tu hamburguesa</legend>
+			<!-- box radio -->
+			<p>
+				<label for="">Pequeña</label><input type="radio" name="tam"></p>
+				<label for="">Mediana</label><input type="radio" name="tam"></p>
+				<label for="">Grande</label><input type="radio" name="tam"></p>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Ingredientes</legend>
+			<p><label for=""><input type="checkbox" name="ingredientes" value="catsup">Catsup</label></p>
+			<p><label for=""><input type="checkbox" name="ingredientes" value="mostaza">Mostaza</label></p>
+			<p><label for=""><input type="checkbox" name="ingredientes" value="cebolla">Cebolla</label></p>
+			<p><label for=""><input type="checkbox" name="ingredientes" value="mayonesa">Mayonesa</label></p>
+		</fieldset>	
+
+		<fieldset>
+			<legend>Datos de envío</legend>
+			<p><label for=""><input type="text-area" placeholder="Dirección de envío"></label></p>
+
+			<label for="direccion">Instrucciones de entrega</label>
+			<p><textarea name="direccion" placeholder="Instrucciones de entrega" cols="200" rows="4"></textarea></p>
+
+			<p><label for="">Hora de entrega: <input type="time"></label></p>
+		</fieldset>
+
+		<p><input type="submit" value="Enviar Info"></p>
+
+	</form>
+</body>
+</html>
